@@ -1,0 +1,190 @@
+/* Font dan background gaming futuristic */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0a0a1a, #151532);
+  color: #c0d8ff;
+  margin: 0;
+  padding: 50px 15px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 720px;
+  background: linear-gradient(145deg, #0f153c, #1b1f52);
+  border-radius: 22px;
+  box-shadow:
+    0 0 40px #3d7effcc,
+    inset 0 0 25px #0033bbcc;
+  padding: 45px 55px;
+  box-sizing: border-box;
+  border: 2px solid #1a53ff;
+  backdrop-filter: blur(12px);
+  transition: box-shadow 0.3s ease;
+}
+
+.faq-container:hover {
+  box-shadow:
+    0 0 60px #5299ffcc,
+    inset 0 0 35px #0050ffcc;
+}
+
+.faq-title {
+  font-weight: 900;
+  font-size: 3.2rem;
+  text-align: center;
+  color: #40aaff;
+  margin-bottom: 8px;
+  text-shadow:
+    0 0 12px #40aaffcc,
+    0 0 24px #007fffaa;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.faq-subtitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #7abfff;
+  margin-bottom: 42px;
+  letter-spacing: 0.12em;
+  font-style: italic;
+  text-shadow: 0 0 8px #7abfffbb;
+  user-select: none;
+}
+
+/* Accordion button style futuristic */
+.accordion-button {
+  width: 100%;
+  background: linear-gradient(135deg, #132a75, #0a1460);
+  border: 2px solid #4488ff;
+  color: #a0cfff;
+  cursor: pointer;
+  padding: 22px 30px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+  transition: 
+    background 0.35s ease,
+    box-shadow 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease;
+  user-select: none;
+  box-shadow:
+    0 6px 14px rgba(68, 136, 255, 0.35),
+    inset 0 0 14px #003388aa;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.accordion-button:hover {
+  background: linear-gradient(135deg, #2659ff, #0a3bcf);
+  color: #e0f5ff;
+  box-shadow:
+    0 8px 30px #4488ffcc,
+    inset 0 0 18px #007fffcc;
+  border-color: #66aaff;
+}
+
+/* Icon plus/minus with animation */
+.accordion-button::after {
+  content: '+';
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #8dbfffcc;
+  text-shadow: 0 0 10px #4488ffcc;
+  transition: all 0.45s ease;
+  filter: drop-shadow(0 0 3px #4488ffaa);
+}
+
+.accordion-button.active {
+  background: linear-gradient(135deg, #1a5aff, #0033cc);
+  color: #d0eaff;
+  border-color: #1a5aff;
+  box-shadow:
+    0 10px 40px #66aaffcc,
+    inset 0 0 25px #00a0ffcc;
+  text-shadow: 0 0 14px #00aaffdd;
+}
+
+.accordion-button.active::after {
+  content: '−';
+  color: #d0eaff;
+  text-shadow: 0 0 12px #00aaffdd;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Panel content */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.35s ease;
+  background: linear-gradient(145deg, #001f66, #003399);
+  border-radius: 0 0 16px 16px;
+  margin-bottom: 26px;
+  padding: 0 30px;
+  color: #aacfff;
+  font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  box-shadow: inset 0 0 20px #0049bbcc;
+  letter-spacing: 0.01em;
+  user-select: text;
+}
+
+/* When open, add padding */
+.accordion-button.active + .accordion-content {
+  padding: 22px 30px;
+}
+
+/* Scrollbar styling (optional, for modern feel) */
+.accordion-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.accordion-content::-webkit-scrollbar-track {
+  background: #001a4d;
+  border-radius: 8px;
+}
+
+.accordion-content::-webkit-scrollbar-thumb {
+  background: #0059ffaa;
+  border-radius: 8px;
+  box-shadow: 0 0 6px #66aaffcc;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 30px 10px;
+  }
+  .faq-container {
+    padding: 30px 35px;
+  }
+  .faq-title {
+    font-size: 2.4rem;
+  }
+  .faq-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .accordion-button {
+    font-size: 1.1rem;
+    padding: 18px 24px;
+  }
+  .accordion-content {
+    font-size: 1rem;
+    padding: 18px 24px;
+  }
+}

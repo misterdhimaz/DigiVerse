@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiverse - Future Technology Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+    .desc-short { max-height: 160px; overflow: hidden; }
+  </style>
+</head>
+<body>
+  <div id="navbar"></div><br><br>
+  <br></br>
+  <br></br>
+
+<div class="container py-5">
+  <div class="row g-5">
+    <!-- Gambar Produk -->
+    <div class="col-md-6">
+      <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/predator1.png" class="d-block w-100 rounded" style="height:400px; object-fit:cover;" alt="Laptop" />
+          </div>
+          <div class="carousel-item">
+            <img src="../images/predator 2.png" class="d-block w-100 rounded" style="height:400px; object-fit:cover;" alt="Laptop 2" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Informasi Produk -->
+    <div class="col-md-6">
+  <h2 class="fw-bold service-title">Predator X17</h2>
+<p class="text-muted">120 pcs tersisa</p>
+<h4 class="text-danger">Rp 42.999.000</h4>
+
+<p class="service-desc">
+  Predator X17 adalah laptop gaming kelas atas yang dirancang untuk para gamer profesional. Ditenagai GPU NVIDIA GeForce RTX 4080, prosesor Intel Core i9 generasi terbaru, serta layar 17 inci UHD (4K) dengan refresh rate 240Hz, laptop ini menghadirkan performa visual dan kecepatan luar biasa. Dilengkapi sistem pendingin dual-fan turbo dan teknologi Thermal Grizzly, Predator X17 memastikan suhu tetap stabil saat bermain game berat.
+</p>
+
+<form class="mb-3">
+  <label for="quantity" class="form-label">Jumlah:</label>
+  <input type="number" id="quantity" class="form-control w-25" value="1" min="1" />
+</form>
+
+<!-- Pilih Model -->
+<div class="mb-3">
+  <label class="form-label">Pilih Model:</label>
+  <div class="btn-group" role="group" aria-label="Pilih Model">
+    <input type="radio" class="btn-check" name="model" id="model1" autocomplete="off" checked>
+    <label class="btn btn-outline-primary" for="model1">Intel i9 / 8GB RAM / 512GB SSD</label>
+
+    <input type="radio" class="btn-check" name="model" id="model2" autocomplete="off">
+    <label class="btn btn-outline-primary" for="model2">Intel i9 / 16GB RAM / 512GB SSD</label>
+
+    <input type="radio" class="btn-check" name="model" id="model3" autocomplete="off">
+    <label class="btn btn-outline-primary" for="model3">Intel i9 / 16GB RAM / 1TB SSD</label>
+  </div>
+</div>
+
+<!-- Informasi Pengiriman -->
+<div class="mb-3">
+  <p class="text-success"><i class="bi bi-truck"></i> Estimasi pengiriman: 2–4 hari kerja</p>
+</div>
+
+<a class="btn btn-dark me-2" href="keranjang.html">🛒 Tambah ke Keranjang</a>
+<a class="btn btn-outline-secondary" href="beli.html">♡ Beli Sekarang</a>
+    </div>
+
+<!-- Tab Deskripsi dan Ulasan -->
+<div class="row mt-5">
+  <div class="col-12">
+  <ul class="nav nav-tabs" id="productTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button" role="tab">
+        Deskripsi
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="spec-tab" data-bs-toggle="tab" data-bs-target="#spec" type="button" role="tab">
+        Spesifikasi
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">
+        Ulasan
+      </button>
+    </li>
+  </ul>
+  <div class="tab-content p-3 border border-top-0" id="productTabContent">
+    <!-- Deskripsi -->
+    <div class="tab-pane fade show active" id="desc" role="tabpanel">
+      <div class="row mt-5"> 
+        <div class="col-12">
+          <div id="productDesc" class="desc-short">
+            <ul>
+              <li><strong>Model:</strong> Predator X17</li>
+              <li><strong>Warna:</strong> Abyssal Black</li>
+              <li><strong>Garansi:</strong> Resmi Acer Indonesia 2 Tahun</li>
+              <li><strong>Prosesor:</strong> Intel Core i9-13980HX (24-core, hingga 5.6GHz)</li>
+              <li><strong>Grafis:</strong> NVIDIA GeForce RTX 4080 12GB GDDR6</li>
+              <li><strong>RAM:</strong> 32GB DDR5 5600MHz (dual-channel, upgradable)</li>
+              <li><strong>Penyimpanan:</strong> 1TB SSD NVMe Gen 4</li>
+              <li><strong>Layar:</strong> 17.3" UHD 4K (3840x2160), 240Hz, IPS, G-SYNC</li>
+              <li><strong>Audio:</strong> DTS:X Ultra, 4-speaker stereo</li>
+              <li><strong>Kamera:</strong> FHD 1080p + Privacy Shutter</li>
+              <li><strong>Baterai:</strong> 99Wh</li>
+              <li><strong>Keyboard:</strong> RGB Mechanical Switch, per-key backlit</li>
+              <li><strong>Berat:</strong> 3.0 kg</li>
+              <li><strong>OS:</strong> Windows 11 Home</li>
+              <li><strong>Port:</strong>
+                <ul>
+                  <li>2x USB 3.2 Gen 2 Type-C (Thunderbolt 4)</li>
+                  <li>2x USB 3.2 Gen 2 Type-A</li>
+                  <li>1x HDMI 2.1</li>
+                  <li>1x Mini DisplayPort 1.4</li>
+                  <li>1x RJ-45 Ethernet</li>
+                  <li>1x Audio combo jack 3.5mm</li>
+                  <li>1x MicroSD Card Reader</li>
+                </ul>
+              </li>
+              <li><strong>Fitur Keamanan:</strong> TPM 2.0, Webcam Shutter, Fingerprint Sensor</li>
+              <li><strong>Aksesori Bundling:</strong> Tas Predator, Mouse Gaming</li>
+            </ul>
+          </div>
+          <button id="toggleBtn" class="btn btn-link p-0 mt-2">Tampilkan lebih banyak ▼</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spesifikasi -->
+    <div class="tab-pane fade" id="spec" role="tabpanel" aria-labelledby="spec-tab">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-white"><strong>Cara Klaim:</strong> Hubungi Merek</li>
+        <li class="list-group-white"><strong>Fungsionalitas:</strong> Gaming dan Multimedia</li>
+        <li class="list-group-white"><strong>Kapasitas Memori:</strong> 1TB SSD</li>
+        <li class="list-group-white"><strong>Periode Garansi:</strong> 24 Bulan</li>
+        <li class="list-group-white"><strong>Sistem Operasi:</strong> Windows</li>
+        <li class="list-group-white"><strong>Tipe Garansi:</strong> Indonesia</li>
+        <li class="list-group-white"><strong>Tipe Prosesor:</strong> Intel Core i9</li>
+      </ul>
+</div>
+
+
+      <!-- Ulasan -->
+      <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+        <div class="container my-4" id="commentContainer">
+          <!-- Ulasan 1 -->
+          <div class="mb-3 d-flex align-items-start">
+            <img src="../images/pp1.jpeg" class="rounded-circle me-3" style="width:50px; height:50px; object-fit:cover;" alt="Jane D.">
+            <div>
+              <strong> Lia R. 🌟🌟🌟🌟🌟</strong><br />
+              <small class="service-desc">13 Mei 2025</small>
+              <p>Laptop ini performanya mantap untuk kerja harian. Nyala cepat, ringan, dan keyboardnya enak dipakai.</p>
+            </div>
+          </div>
+
+          <!-- Ulasan 2 -->
+          <div class="mb-3 d-flex align-items-start">
+            <img src="../images/pp2.jpeg" class="rounded-circle me-3" style="width:50px; height:50px;"  alt="Rio P.">
+            <div>
+              <strong> Dhiya R. 🌟🌟🌟🌟</strong><br />
+              <small class="service-desc">10 Mei 2025</small>
+              <p>Desain tipis dan ringan. Cocok banget buat dibawa kuliah. Layarnya juga tajam walaupun bukan IPS.</p>
+            </div>
+          </div>
+
+          <div class="mb-3 d-flex align-items-start">
+            <img src="../images/pp3.jpeg" class="rounded-circle me-3" style="width:50px; height:50px;" alt="Jane D.">
+            <div>
+              <strong> Ahmad D. 🌟🌟🌟🌟🌟</strong><br />
+              <small class="service-desc">13 Mei 2025</small>
+              <p>Laptop ini performanya mantap untuk kerja harian. Nyala cepat, ringan, dan keyboardnya enak dipakai.</p>
+            </div>
+          </div>
+
+          <div class="mb-3 d-flex align-items-start">
+            <img src="../images/pp4.jpeg" class="rounded-circle me-3" style="width:50px; height:50px;"  alt="Jane D.">
+            <div>
+              <strong> Ridho R. 🌟🌟🌟🌟🌟</strong><br />
+              <small class="service-desc">13 Mei 2025</small>
+              <p>Laptop ini performanya mantap untuk kerja harian. Nyala cepat, ringan, dan keyboardnya enak dipakai.</p>
+            </div>
+          </div>
+
+          <!-- Ulasan 3 -->
+          <div class="mb-3 d-flex align-items-start">
+            <img src="../images/pp1.jpeg" class="rounded-circle me-3" style="width:50px; height:50px;"  alt="Lisa M.">
+            <div>
+              <strong> Lisa M. 🌟🌟🌟🌟🌟</strong><br />
+              <small class="service-desc">8 Mei 2025</small>
+              <p>Suka banget sama garansi 2 tahunnya. Lenovo Premium Care responsif pas saya tanya-tanya!</p>
+            </div>
+          </div>
+        </div>
+          <div class="mt-4">
+  <div class="d-flex align-items-center">
+    <input type="text" id="commentInput" class="form-control me-2" placeholder="Tuliskan komentar Anda..." />
+    
+    <div id="starRating" class="d-flex align-items-center me-2">
+      <select id="comment-rating" class="form-select w-auto" style="height: 38px;">
+        <option value="5">🌟🌟🌟🌟🌟</option>
+        <option value="4">🌟🌟🌟🌟</option>
+        <option value="3">🌟🌟🌟</option>
+        <option value="2">🌟🌟</option>
+        <option value="1">🌟</option>
+      </select>
+    </div>
+
+    <button id="sendComment" class="btn btn-primary">
+      <i class="fas fa-paper-plane"></i>
+    </button>
+  </div>
+</div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<br><br><br>
+<div id="footer"></div>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+    const toggleBtn = document.getElementById("toggleBtn");
+    const desc = document.getElementById("productDesc");
+  let expanded = false;
+
+    toggleBtn.addEventListener("click", () => {
+    expanded = !expanded;
+    desc.classList.toggle("desc-short", !expanded);
+    toggleBtn.textContent = expanded ? "Tampilkan lebih sedikit ▲" : "Tampilkan lebih banyak ▼";
+    });
+    
+  const input = document.getElementById("commentInput");
+const sendBtn = document.getElementById("sendComment");
+const commentContainer = document.getElementById("commentContainer");
+const ratingSelect = document.getElementById("comment-rating");
+
+sendBtn.addEventListener("click", function () {
+  const text = input.value.trim();
+  if (text === "") return;
+
+  const rating = parseInt(ratingSelect.value); // ambil rating dari select
+  const stars = "🌟".repeat(rating);
+
+  const today = new Date();
+  const date = today.toLocaleDateString('id-ID', {
+    day: 'numeric', month: 'long', year: 'numeric'
+  });
+
+  const newComment = `
+    <div class="mb-3 d-flex align-items-start">
+      <img src="img/pp1.jpeg" class="rounded-circle me-3" style="width:50px; height:50px; object-fit:cover;" alt="User">
+      <div>
+        <strong>Pengguna Baru ${stars}</strong><br />
+        <small class="service-desc">${date}</small>
+        <p>${text}</p>
+      </div>
+    </div>
+  `;
+
+  commentContainer.insertAdjacentHTML('beforeend', newComment);
+
+  // Reset input dan rating ke default
+  input.value = "";
+  ratingSelect.value = "5";
+});
+
+</script>
+</body>
+</html>

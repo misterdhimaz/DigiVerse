@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQSTORE</title>
+    <link rel="stylesheet" href="../../css/contact/FAQstore.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  
+  </head>
+<body>
+  <a href="../index.html" class="btn btn-back position-absolute top-0 mr-20 start-0 m-5 px-5 py-2 fw-bold" style="color: aliceblue;"><span class="me-2">&#8592;</span>Back</a>
+    
+  <main class="faq-container">
+    <h1 class="faq-title">FAQ - Frequently Asked Questions</h1>
+    <p class="faq-subtitle">Pertanyaan yang sering diajukan pelanggan kami</p>
+
+    <div class="accordion">
+      <button class="accordion-button">Bagaimana cara melakukan pengembalian barang?</button>
+      <div class="accordion-content">
+        <p>Kamu bisa melakukan pengembalian barang dalam waktu 7 hari setelah menerima produk dengan mengisi form pengembalian di halaman Support kami.</p>
+      </div>
+
+      <button class="accordion-button">Apakah saya bisa melacak pesanan saya?</button>
+      <div class="accordion-content">
+        <p>Ya, kamu dapat melacak pesanan melalui dashboard akun kamu dengan nomor resi yang diberikan saat pengiriman.</p>
+      </div>
+
+      <button class="accordion-button">Metode pembayaran apa saja yang diterima?</button>
+      <div class="accordion-content">
+        <p>Kami menerima pembayaran via transfer bank, e-wallet, dan kartu kredit/debit.</p>
+      </div>
+
+      <button class="accordion-button">Bagaimana cara menghubungi Customer Support?</button>
+      <div class="accordion-content">
+        <p>Kamu bisa menghubungi kami lewat email hellodigiverse@gmail.com atau telepon 0851-7788-9900 pada jam kerja.</p>
+      </div>
+
+       <button class="accordion-button">Berapa lama waktu pengiriman pesanan?</button>
+        <div class="accordion-content">
+            <p>Waktu pengiriman standar adalah 2-5 hari kerja tergantung lokasi pengiriman dan metode pengiriman yang dipilih.</p>
+        </div>
+
+        <button class="accordion-button">Apakah ada garansi untuk produk digital yang dibeli?</button>
+        <div class="accordion-content">
+            <p>Ya, kami memberikan garansi penggantian jika produk digital mengalami masalah teknis dalam 30 hari setelah pembelian.</p>
+        </div>
+
+        <button class="accordion-button">Bisakah saya memesan produk khusus atau custom?</button>
+    <div class="accordion-content">
+        <p>Kami menerima pesanan custom sesuai kebutuhan Anda. Silakan hubungi tim support kami untuk konsultasi dan penawaran harga.</p>
+    </div>
+
+    </div>
+  </main>
+
+ <script>
+    // Accordion functionality
+    const accButtons = document.querySelectorAll('.accordion-button');
+
+    accButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Toggle active class
+        button.classList.toggle('active');
+        // Toggle the panel
+        const panel = button.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

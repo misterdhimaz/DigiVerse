@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contactus</title>
+  <link rel="stylesheet" href="../css/contact/contactus.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <div id="navbar"></div><br><br><br>
+  <!-- contactus section -->
+   <br><br><div class="banner" id="contactus">CONTACT US</div>
+     <!-- TAB MENU -->
+    <div class="tabs">
+      <button class="tab active" data-tab="pertanyaan">Pertanyaan</button>
+      <button class="tab" data-tab="kemitraan">Kemitraan</button>
+      <button class="tab" data-tab="investor">Hubungan Investor</button>
+    </div>
+
+    <!-- TAB PERTANYAAN -->
+    <div class="tab-content active" id="pertanyaan">
+      <div class="contact-container">
+        <div class="info-box">
+          <h2>Informasi Kontak</h2>
+          <p>Jika Anda mempunyai pertanyaan atau kekhawatiran, hubungi kami dengan mengisi formulir kontak</p>
+          <p><span class="icons">📞</span> 0851-7788-9900</p>
+          <p><span class="icons">✉️</span> hellodigiverse@gamil.com</p>
+          <p><span class="icons">📍</span> Gedung Pixel Prime, Lantai 7, Ruang 707</p>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/xpwdnqkl" method="POST">
+          <label>Nama</label>
+          <input type="text" name="name" required />
+
+          <label>Email</label>
+          <input type="email" name="email" required />
+
+          <label>No HP</label>
+          <input type="tel" name="phone" required />
+
+          <label>Pesan</label>
+          <textarea name="message" rows="6" required></textarea>
+
+          <button type="submit" class="send-btn">SEND</button>
+          <div class="form-status"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- TAB KEMITRAAN -->
+    <div class="tab-content" id="kemitraan">
+      <div class="contact-container">
+        <div class="info-box">
+          <h2>Kemitraan</h2>
+          <p>Tertarik bermitra? Hubungi tim kami untuk kolaborasi bisnis.</p>
+          <p><span class="icons">📞</span> 0851-7788-9900</p>
+          <p><span class="icons">✉️</span> kemitraandigiverse@gamil.com</p>
+          <p><span class="icons">📍</span> Gedung Pixel Prime, Lantai 7, Ruang 707</p>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/xpwdnqkl" method="POST">
+          <label>Nama Perusahaan</label>
+          <input type="text" name="name" required />
+
+          <label>Email</label>
+          <input type="email" name="email" required />
+
+          <label>Kontak</label>
+          <input type="tel" name="phone" required />
+
+          <label>Proposal / Pesan</label>
+          <textarea name="message" rows="6" required></textarea>
+
+          <button type="submit" class="send-btn">KIRIM</button>
+          <div class="form-status"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- TAB INVESTOR -->
+    <div class="tab-content" id="investor">
+      <div class="contact-container">
+        <div class="info-box">
+          <h2>Hubungan Investor</h2>
+          <p>Untuk pertanyaan investasi atau laporan keuangan, hubungi tim investor kami.</p>
+          <p><span class="icons">📞</span> 0851-7788-9900</p>
+          <p><span class="icons">✉️</span> investordigiverse@gmail.com</p>
+          <p><span class="icons">📍</span> Gedung Pixel Prime, Lantai 7, Ruang 707</p>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/xpwdnqkl" method="POST">
+          <label>Nama</label>
+          <input type="text" name="name" required />
+
+          <label>Email</label>
+          <input type="email" name="email" required />
+
+          <label>Perusahaan (Opsional)</label>
+          <input type="text" name="company" />
+
+          <label>Pesan</label>
+          <textarea name="message" rows="6" required></textarea>
+
+          <button type="submit" class="send-btn">KIRIM</button>
+          <div class="form-status"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- section grid -->
+     <div class="support-container bg-dark position-relative py-5">
+  <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(10, 25, 47, 0.65); z-index: 0;"></div>
+  <div class="container position-relative" style="z-index: 1;">
+    <div class="row g-4">
+      <!-- DIGIVERSE SUPPORT -->
+      <div class="col-md-6 col-lg-3">
+        <div class="support-box p-4 rounded" style="background-color: rgba(0, 0, 0, 0.85); box-shadow: 0 0 10px rgba(0, 255, 0, 0.1); transition: 0.3s ease-in-out;">
+          <svg class="support-icon mb-3" xmlns="http://www.w3.org/2000/svg" fill="#00ff66" width="36" height="36" viewBox="0 0 16 16">
+            <path d="M6.5 0a.5.5 0 0 1 .5.5V2h2V.5a.5.5 0 0 1 1 0V2h.5A1.5 1.5 0 0 1 12 3.5V5h1.5a.5.5 0 0 1 0 1H12v2h1.5a.5.5 0 0 1 0 1H12v1.5A1.5 1.5 0 0 1 10.5 12H10v1.5a.5.5 0 0 1-1 0V12H7v1.5a.5.5 0 0 1-1 0V12h-.5A1.5 1.5 0 0 1 4 10.5V9H2.5a.5.5 0 0 1 0-1H4V6H2.5a.5.5 0 0 1 0-1H4V3.5A1.5 1.5 0 0 1 5.5 2H6V.5a.5.5 0 0 1 .5-.5zM5 5v6h6V5H5z"/>
+          </svg>
+          <h5 class="support-title mb-3" style="color: #66CCCC; font-size: 1rem; font-weight: bold;">DIGIVERSE SUPPORT</h5>
+          <ul class="support-list list-unstyled m-0 p-0">
+            <li class="mb-2"><a href="./product.html" style="color: 	#D9F0F2; text-decoration: none;">Product Support ></a></li>
+            <li class="mb-2"><a href="./contact/warrantypolicy.html" style="color: 	#D9F0F2; text-decoration: none;">Warranty Policy ></a></li>
+            <li><a href="./contact/technicalhelp.html" style="color: 	#D9F0F2; text-decoration: none;">Technical Help ></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ONLINE ORDERS -->
+      <div class="col-md-6 col-lg-3">
+        <div class="support-box p-4 rounded" style="background-color: rgba(0, 0, 0, 0.85); box-shadow: 0 0 10px rgba(0, 255, 0, 0.1); transition: 0.3s ease-in-out;">
+          <svg class="support-icon mb-3" xmlns="http://www.w3.org/2000/svg" fill="#00ff66" width="36" height="36" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+          </svg>
+          <h5 class="support-title mb-3" style="color: #66CCCC; font-size: 1rem; font-weight: bold;">ONLINE ORDERS</h5>
+          <ul class="support-list list-unstyled m-0 p-0">
+            <li class="mb-2"><a href="./contact/FAQstore.html" style="color: 	#D9F0F2; text-decoration: none;">FAQ ></a></li>
+            <li><a href="#contactus" style="color: 	#D9F0F2; text-decoration: none;">Contact Sales ></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SALES & MARKETING -->
+      <div class="col-md-6 col-lg-3">
+        <div class="support-box p-4 rounded" style="background-color: rgba(0, 0, 0, 0.85); box-shadow: 0 0 10px rgba(0, 255, 0, 0.1); transition: 0.3s ease-in-out;">
+          <svg class="support-icon mb-3" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#00ff66" stroke-width="1.5" width="36" height="36" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
+          </svg>
+          <h5 class="support-title mb-3" style="color: #66CCCC; font-size: 1rem; font-weight: bold;">SALES & MARKETING</h5>
+          <ul class="support-list list-unstyled m-0 p-0">
+            <li class="mb-2"><a href="./contact/reseller.html" style="color: 	#D9F0F2; text-decoration: none;">Reseller ></a></li>
+            <li><a href="./contact/partnership.html" style="color: 	#D9F0F2; text-decoration: none;">Partnership ></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CULT OF DIGIVERSE -->
+      <div class="col-md-6 col-lg-3">
+        <div class="support-box p-4 rounded" style="background-color: rgba(0, 0, 0, 0.85); box-shadow: 0 0 10px rgba(0, 255, 0, 0.1); transition: 0.3s ease-in-out;">
+          <svg class="support-icon mb-3" xmlns="http://www.w3.org/2000/svg" fill="#00ff66" width="36" height="36" viewBox="0 0 16 16">
+            <path d="m10.495 6.92 1.278-.619a.483.483 0 0 0 .126-.782c-.252-.244-.682-.139-.932.107-.23.226-.513.373-.816.53l-.102.054c-.338.178-.264.626.1.736a.48.48 0 0 0 .346-.027ZM7.741 9.808V9.78a.413.413 0 1 1 .783.183l-.22.443a.6.6 0 0 1-.12.167l-.193.185a.36.36 0 1 1-.5-.516l.112-.108a.45.45 0 0 0 .138-.326M5.672 12.5l.482.233A.386.386 0 1 0 6.32 12h-.416a.7.7 0 0 1-.419-.139l-.277-.206a.302.302 0 1 0-.298.52z"/>
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M1.612 10.867l.756-1.288a1 1 0 0 1 1.545-.225l1.074 1.005a.986.986 0 0 0 1.36-.011l.038-.037a.88.88 0 0 0 .26-.755c-.075-.548.37-1.033.92-1.099.728-.086 1.587-.324 1.728-.957.086-.386-.114-.83-.361-1.2-.207-.312 0-.8.374-.8.123 0 .24-.055.318-.15l.393-.474c.196-.237.491-.368.797-.403.554-.064 1.407-.277 1.583-.973.098-.391-.192-.634-.484-.88-.254-.212-.51-.426-.515-.741a7 7 0 0 1 3.425 7.692 1 1 0 0 0-.087-.063l-.316-.204a1 1 0 0 0-.977-.06l-.169.082a1 1 0 0 1-.741.051l-1.021-.329A1 1 0 0 0 11.205 9h-.165a1 1 0 0 0-.945.674l-.172.499a1 1 0 0 1-.404.514l-.802.518a1 1 0 0 0-.458.84v.455a1 1 0 0 0 1 1h.257a1 1 0 0 1 .542.16l.762.49a1 1 0 0 0 .283.126 7 7 0 0 1-9.49-3.409Z"/>
+          </svg>
+          <h5 class="support-title mb-3" style="color: #66CCCC; font-size: 1rem; font-weight: bold;">CULT OF DIGIVERSE</h5>
+          <ul class="support-list list-unstyled m-0 p-0">
+            <li class="mb-2"><a href="https://www.instagram.com/hafidzfkrii/" target="_blank" style="color: 	#D9F0F2; text-decoration: none;">Instagram ></a></li>
+            <li class="mb-2"><a href="https://x.com/fikriiee_" target="_blank" style="color: 	#D9F0F2; text-decoration: none;">Twitter ></a></li>
+            <li><a href="https://www.youtube.com/@m.hafidzhazimulfikri911" target="_blank" style="color: 	#D9F0F2; text-decoration: none;">YouTube ></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- corporate office -->
+<section class="corporate-offices">
+        <h1>Corporate Offices</h1>
+        <div class="offices-grid">
+        <div class="office">
+            <h2>Jakarta Headquarters</h2>
+            <p>Jl. Jenderal Sudirman Kav. 52-53</p>
+            <p>Jakarta Selatan</p>
+            <p>DKI Jakarta 12190</p>
+            <p>Indonesia</p>
+        </div>
+        <div class="office">
+            <h2>Bandung Office</h2>
+            <p>Jl. Asia Afrika No. 55</p>
+            <p>Bandung</p>
+            <p>Jawa Barat 40111</p>
+            <p>Indonesia</p>
+        </div>
+        <div class="office">
+            <h2>Surabaya Office</h2>
+            <p>Jl. Basuki Rahmat No. 100</p>
+            <p>Surabaya</p>
+            <p>Jawa Timur 60271</p>
+            <p>Indonesia</p>
+        </div>
+        <div class="office">
+            <h2>Medan Office</h2>
+            <p>Jl. Sisingamangaraja No. 25</p>
+            <p>Medan</p>
+            <p>Sumatera Utara 20151</p>
+            <p>Indonesia</p>
+        </div>
+        <div class="office">
+            <h2>Makassar Office</h2>
+            <p>Jl. Jenderal Sudirman No. 14</p>
+            <p>Makassar</p>
+            <p>Sulawesi Selatan 90174</p>
+            <p>Indonesia</p>
+        </div>
+        <div class="office">
+            <h2>Yogyakarta Office</h2>
+            <p>Jl. Malioboro No. 10</p>
+            <p>Yogyakarta</p>
+            <p>Daerah Istimewa Yogyakarta 55133</p>
+            <p>Indonesia</p>
+        </div>
+        <div class="office">
+            <h2>Balikpapan Office</h2>
+            <p>Jl. Jenderal Sudirman No. 7</p>
+            <p>Balikpapan</p>
+            <p>Kalimantan Timur 76112</p>
+            <p>Indonesia</p>
+        </div>
+        <div class="office">
+            <h2>Denpasar Office</h2>
+            <p>Jl. Sunset Road No. 88</p>
+            <p>Denpasar</p>
+            <p>Bali 80119</p>
+            <p>Indonesia</p>
+        </div>
+    </div>
+    </section>
+
+<div id="footer"></div>
+<script src="../../js/script.js"></script>
+<script src="../../js/contactus.js"></script>
+
+</body>
+</html>

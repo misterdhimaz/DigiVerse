@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiverse - Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
+ 
+</head>
+<body>
+    <div id="navbar"></div><br><br><br>
+    <div class="hero-section text-center">
+        <div class="light-beam"></div>
+        <div class="light-beam"></div>
+        <div class="light-beam"></div>
+        
+        <div class="container">
+            <h1 class="hero-title">Temukan Produk Teknologi Terbaik Kami</h1>
+            <p class="hero-subtitle">Digiverse menghadirkan berbagai produk teknologi canggih dan terbaru dengan kualitas premium. Jelajahi koleksi lengkap kami untuk menemukan perangkat yang sesuai dengan kebutuhan Anda.</p>
+                            <div class="tombol-product">
+                        <a href="#" class="btn btn-neon glow-border">Explore Products</a>
+           </div>
+        </div>
+    </div>
+    
+    <div class="container py-5">
+        <ul class="nav nav-tabs category-tabs justify-content-center" id="productTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="laptop-tab" data-bs-toggle="tab" data-bs-target="#laptop" type="button" role="tab" aria-controls="laptop" aria-selected="true">
+                    <i class="fas fa-laptop me-2"></i> Laptop
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="accessories-tab" data-bs-toggle="tab" data-bs-target="#sparepart" type="button" role="tab" aria-controls="accessories" aria-selected="false">
+                    <i class="fas fa-gear me-2"></i> Sparepart
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="phone-tab" data-bs-toggle="tab" data-bs-target="#phone" type="button" role="tab" aria-controls="phone" aria-selected="false">
+                    <i class="fas fa-mobile-alt me-2"></i> Smartphone
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tv-tab" data-bs-toggle="tab" data-bs-target="#tv" type="button" role="tab" aria-controls="tv" aria-selected="false">
+                    <i class="fas fa-tv me-2"></i> TV
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="accessories-tab" data-bs-toggle="tab" data-bs-target="#accessories" type="button" role="tab" aria-controls="accessories" aria-selected="false">
+                    <i class="fas fa-keyboard me-2"></i> Aksesoris
+                </button>
+            </li>
+        </ul>
+        
+        <div class="tab-content" id="productTabsContent">
+            <div class="floating-icons">
+                <i class="fas fa-microchip floating-icon" style="left: 10%; animation-delay: 0s;"></i>
+                <i class="fas fa-memory floating-icon" style="left: 20%; animation-delay: 3s;"></i>
+                <i class="fas fa-headphones floating-icon" style="left: 30%; animation-delay: 6s;"></i>
+                <i class="fas fa-battery-full floating-icon" style="left: 40%; animation-delay: 9s;"></i>
+                <i class="fas fa-hdd floating-icon" style="left: 50%; animation-delay: 12s;"></i>
+                <i class="fas fa-microchip floating-icon" style="left: 60%; animation-delay: 1s;"></i>
+                <i class="fas fa-memory floating-icon" style="left: 70%; animation-delay: 4s;"></i>
+                <i class="fas fa-headphones floating-icon" style="left: 80%; animation-delay: 7s;"></i>
+                <i class="fas fa-battery-full floating-icon" style="left: 90%; animation-delay: 10s;"></i>
+            </div>
+            
+           <!-- Laptop Tab -->
+<div class="tab-pane fade show active" id="laptop" role="tabpanel" aria-labelledby="laptop-tab">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/predator1.png" alt="Predator X17" class="product-img">
+                    <span class="product-badge">NEW</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Predator X17</h3>
+                    <p class="product-desc">Laptop gaming high-end dengan RTX 4080, layar 17” 4K 240Hz, dan sistem pendingin dual-fan turbo.</p>
+                    <div class="product-price">Rp 42.999.000 <span class="old-price">Rp 45.000.000</span></div>
+                    <a href="./detail.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/laptop/2.jpg" alt="ROG Strix G15" class="product-img">
+                    <span class="product-badge">HOT</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">ROG Strix G15</h3>
+                    <p class="product-desc">Laptop gaming 15” dengan Ryzen 9, RTX 4070, RGB lighting, dan refresh rate 300Hz.</p>
+                    <br>
+                    <div class="product-price">Rp 35.500.000</div>
+                    <a href="./detail.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/laptop/3.jpg" alt="Alienware M16" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Alienware M16</h3>
+                    <p class="product-desc">Desain futuristik dengan Intel i9, RTX 4090, RAM 64GB, dan layar QHD 165Hz.</p>
+                    <br><div class="product-price">Rp 48.750.000 <span class="old-price">Rp 51.200.000</span></div>
+                    <a href="./detail.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/laptop/4.jpg" alt="MSI Stealth 14" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">MSI Stealth 14</h3>
+                    <p class="product-desc">Laptop tipis dan ringan untuk gamer on-the-go, GPU RTX 4060 dan layar 240Hz.</p>
+                    <div class="product-price">Rp 22.999.000</div>
+                    <a href="./detail.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/laptop/5.jpg" alt="Legion 5 Pro" class="product-img">
+                    <span class="product-badge">BEST</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Legion 5 Pro</h3>
+                    <p class="product-desc">Lenovo gaming seri profesional dengan AMD Ryzen 7, RTX 3070, dan layar 165Hz 16”.</p>
+                    <div class="product-price">Rp 24.300.000</div>
+                    <a href="./detail.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/laptop/6.jpg" alt="TUF Gaming F15" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">TUF Gaming F15</h3>
+                    <p class="product-desc">Tangguh dan terjangkau, dengan Intel i7, RTX 3050 Ti, dan daya tahan militer-grade.</p>
+                    <div class="product-price">Rp 15.999.000 <span class="old-price">Rp 18.000.000</span></div>
+                    <a href="./detail.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/laptop/7.jpg" alt="HP Omen 16" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">HP Omen 16</h3>
+                    <p class="product-desc">Desain minimalis dengan performa maksimal, i7 Gen 12, RTX 4060, dan layar 165Hz QHD.</p>
+                    <div class="product-price">Rp 21.450.000</div>
+                    <a href="./detail.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/laptop/8.jpg" alt="Acer Nitro 5" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Acer Nitro 5</h3>
+                    <p class="product-desc">Laptop gaming populer dengan Core i5, RTX 3050, dan dual-fan cooling system.</p>
+                    <div class="product-price">Rp 13.999.000</div>
+                    <a href="./detail.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/laptop/9.jpg" alt="Gigabyte AORUS 15P" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Gigabyte AORUS 15P</h3>
+                    <p class="product-desc">Performa kompetitif dengan Intel i7, RTX 3070, dan software AI untuk pendinginan.</p>
+                    <div class="product-price">Rp 26.799.000</div>
+                    <a href="./detail.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+           <!-- Smartphone Tab -->
+<div class="tab-pane fade" id="phone" role="tabpanel" aria-labelledby="phone-tab">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/poto/1.jpg" alt="Galaxy X Pro" class="product-img">
+                    <span class="product-badge">NEW</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Galaxy X Pro</h3>
+                    <p class="product-desc">Smartphone flagship dengan kamera 200MP, layar AMOLED 120Hz, dan chipset terkuat.</p>
+                    <div class="product-price">Rp 18.999.000</div>
+                    <a href="../src/detail-hp.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/poto/2.jpg" alt="iPhone 15 Ultra" class="product-img">
+                    <span class="product-badge">BEST</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">iPhone 15 Ultra</h3>
+                    <p class="product-desc">Titanium body, Dynamic Island, chip A17 Pro, dan kamera 48MP dengan optical zoom.</p>
+                    <div class="product-price">Rp 22.500.000</div>
+                    <a href="../src/detail-hp.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/poto/3.jpg" alt="Pixel 8 Pro" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Pixel 8 Pro</h3>
+                    <p class="product-desc">Kamera terbaik dengan AI Google, layar LTPO 120Hz, dan update software 7 tahun.</p>
+                    <div class="product-price">Rp 15.750.000 <span class="old-price">Rp 17.200.000</span></div>
+                    <a href="../src/detail-hp.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/poto/4.jpg" alt="OnePlus 12" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">OnePlus 12</h3>
+                    <p class="product-desc">Performa flagship dengan harga lebih terjangkau, fast charging 100W, layar 2K 120Hz.</p>
+                    <div class="product-price">Rp 12.999.000</div>
+                    <a href="../src/detail-hp.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/poto/5.jpg" alt="Xiaomi 14 Pro" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Xiaomi 14 Pro</h3>
+                    <p class="product-desc">Leica kamera system, Snapdragon 8 Gen 3, layar LTPO AMOLED 2K dengan 120Hz.</p>
+                    <div class="product-price">Rp 14.500.000</div>
+                    <a href="../src/detail-hp.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/poto/6.jpg" alt="ROG Phone 7" class="product-img">
+                    <span class="product-badge">GAMING</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">ROG Phone 7</h3>
+                    <p class="product-desc">Smartphone gaming dengan refresh rate 165Hz, cooling system aktif, dan baterai 6000mAh.</p>
+                    <div class="product-price">Rp 16.800.000</div>
+                    <a href="../src/detail-hp.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+           
+<!-- sparepart Tab -->
+<div class="tab-pane fade" id="sparepart" role="tabpanel" aria-labelledby="psparepart">
+    <div class="row">
+        <!-- Produk 1 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/sparepart/1.jpg" alt="NVIDIA RTX 4090" class="product-img">
+                    <span class="product-badge">NEW</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">NVIDIA RTX 4090</h3>
+                    <p class="product-desc">GPU terbaik untuk gaming dan desain 3D, memori 24GB GDDR6X, performa luar biasa.</p>
+                    <div class="product-price">Rp 38.000.000</div>
+                    <a href="../src/detail-sparepart.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/sparepart/2.jpg" alt="Intel Core i9 14900K" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Intel Core i9 14900K</h3>
+                    <p class="product-desc">Prosesor generasi ke-14 dengan 24 core, ideal untuk editing dan gaming ekstrem.</p>
+                    <div class="product-price">Rp 12.500.000</div>
+                    <a href="../src/detail-sparepart.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/sparepart/3.jpg" alt="Samsung 4K QLED 55”" class="product-img">
+                    <span class="product-badge">TV</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Samsung 4K QLED 55”</h3>
+                    <p class="product-desc">Smart TV dengan panel QLED UHD 4K, Dolby Vision, dan refresh rate 120Hz.</p>
+                    <div class="product-price">Rp 9.899.000</div>
+                    <a href="../src/detail-sparepart.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk 4 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/sparepart/4.jpg" alt="Apple A17 Pro Chip" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Apple A17 Pro Chip</h3>
+                    <p class="product-desc">Chipset HP terbaru dari Apple, efisien dan kuat untuk gaming serta produktivitas.</p>
+                    <div class="product-price">Rp 4.200.000</div>
+                    <a href="../src/detail-sparepart.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk 5 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/sparepart/5.jpg" alt="ASUS ROG Motherboard Z790" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">ASUS ROG Motherboard Z790</h3>
+                    <p class="product-desc">Motherboard gaming Z790 terbaru, support DDR5, PCIe 5.0, dan overclocking.</p>
+                    <div class="product-price">Rp 8.750.000</div>
+                    <a href="../src/detail-sparepart.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk 6 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/sparepart/6.jpg" alt="Pixel 8 Battery Module" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Pixel 8 Battery Module</h3>
+                    <p class="product-desc">Modul baterai original untuk Google Pixel 8, daya tahan tinggi dan tahan panas.</p>
+                    <div class="product-price">Rp 900.000</div>
+                    <a href="../src/detail-sparepart.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk 7 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/sparepart/7.jpg" alt="Samsung EVO 990 Pro 2TB SSD" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Samsung EVO 990 Pro 2TB SSD</h3>
+                    <p class="product-desc">SSD NVMe Gen4 kecepatan tinggi, cocok untuk boot OS dan game AAA.</p>
+                    <div class="product-price">Rp 3.200.000</div>
+                    <a href="../src/detail-sparepart.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk 8 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/sparepart/8.jpg" alt="Corsair Dominator 32GB DDR5" class="product-img">
+                    <span class="product-badge">NEW</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Corsair Dominator 32GB DDR5</h3>
+                    <p class="product-desc">RAM high-performance DDR5 6000MHz untuk gaming dan multitasking berat.</p>
+                    <div class="product-price">Rp 3.950.000</div>
+                    <a href="../src/detail-sparepart.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk 9 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/sparepart/9.jpg" alt="LG OLED C3 65”" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">LG OLED C3 65”</h3>
+                    <p class="product-desc">TV OLED terbaru dengan teknologi AI Picture Pro & Dolby Atmos.</p>
+                    <div class="product-price">Rp 26.000.000</div>
+                    <a href="../src/detail-sparepart.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk 10 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/sparepart/10.jpg" alt="iPhone 15 Screen Replacement" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">iPhone 15 Screen Replacement</h3>
+                    <p class="product-desc">Layar original Super Retina XDR untuk iPhone 15, kualitas premium.</p>
+                    <div class="product-price">Rp 5.000.000</div>
+                    <a href="../src/detail-sparepart.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk 11 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/sparepart/11.jpg" alt="Thermalright Peerless Assassin 120" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Thermalright Peerless Assassin 120</h3>
+                    <p class="product-desc">Cooler CPU dual tower dengan performa sebanding AIO liquid cooling.</p>
+                    <div class="product-price">Rp 750.000</div>
+                    <a href="../src/detail-sparepart.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk 12 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/sparepart/12.jpg" alt="Gigabyte RTX 4070 Windforce" class="product-img">
+                    <span class="product-badge">BEST</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Gigabyte RTX 4070 Windforce</h3>
+                    <p class="product-desc">GPU dengan performa tinggi, cocok untuk 1440p gaming & content creation.</p>
+                    <div class="product-price">Rp 12.300.000</div>
+                    <a href="../src/detail-sparepart.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk 13 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/sparepart/13.jpg" alt="Cooler Master PSU 850W" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Cooler Master PSU 850W</h3>
+                    <p class="product-desc">Power Supply Modular 80+ Gold, cocok untuk build high-end gaming PC.</p>
+                    <div class="product-price">Rp 2.100.000</div>
+                    <a href="../src/detail-sparepart.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk 14 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/sparepart/14.jpg" alt="Kingston 1TB NV2 M.2 SSD" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Kingston 1TB NV2 M.2 SSD</h3>
+                    <p class="product-desc">SSD M.2 PCIe Gen 4x4, ideal untuk upgrade laptop dan PC dengan kecepatan tinggi.</p>
+                    <div class="product-price">Rp 1.150.000</div>
+                    <a href="../src/detail-sparepart.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk 15 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/sparepart/15.jpg" alt="HyperX Cloud II Gaming Headset" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">HyperX Cloud II Gaming Headset</h3>
+                    <p class="product-desc">Headset gaming legendaris dengan suara surround 7.1 dan kenyamanan luar biasa.</p>
+                    <div class="product-price">Rp 1.499.000</div>
+                    <a href="../src/detail-sparepart.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+            
+          <!-- TV Tab -->
+<div class="tab-pane fade" id="tv" role="tabpanel" aria-labelledby="tv-tab">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/poto/7.jpg" alt="OLED Master X" class="product-img">
+                    <span class="product-badge">NEW</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">OLED Master X</h3>
+                    <p class="product-desc">TV OLED 77" dengan teknologi AI Picture Pro, Dolby Vision IQ, dan suara 120W 4.2.2.</p>
+                    <div class="product-price">Rp 45.999.000</div>
+                    <a href="../src/detail-tv.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/poto/8.jpg" alt="Neo QLED 8K" class="product-img">
+                    <span class="product-badge">BEST</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Neo QLED 8K</h3>
+                    <p class="product-desc">TV 8K 85" dengan Quantum Matrix Technology, Object Tracking Sound Pro, dan AI Upscaling.</p>
+                    <div class="product-price">Rp 62.500.000</div>
+                    <a href="../src/detail-tv.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/poto/9.jpg" alt="MiniLED Cinema" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">MiniLED Cinema</h3>
+                    <p class="product-desc">TV 75" dengan 2000+ zone dimming, Dolby Atmos, dan processor Cognitive XR.</p>
+                    <div class="product-price">Rp 38.750.000 <span class="old-price">Rp 42.200.000</span></div>
+                    <a href="../src/detail-tv.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/poto/10.jpg" alt="The Frame" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">The Frame</h3>
+                    <p class="product-desc">TV QLED 65" yang berubah menjadi karya seni ketika tidak digunakan, dengan bezel customizable.</p>
+                    <div class="product-price">Rp 28.999.000</div>
+                    <a href="../src/detail-tv.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/poto/11.jpg" alt="Gaming TV Pro" class="product-img">
+                    <span class="product-badge">GAMING</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Gaming TV Pro</h3>
+                    <p class="product-desc">TV 55" dengan refresh rate 144Hz, ALLM, VRR, dan input lag terendah di kelasnya.</p>
+                    <div class="product-price">Rp 24.500.000</div>
+                    <a href="../src/detail-tv.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/poto/12.jpg" alt="Smart TV UHD" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Smart TV UHD</h3>
+                    <p class="product-desc">TV 50" 4K UHD dengan Android TV, HDR10+, dan suara Dolby Digital Plus.</p>
+                    <div class="product-price">Rp 9.800.000 <span class="old-price">Rp 11.500.000</span></div>
+                    <a href="../src/detail-tv.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+            <!-- Accessories Tab -->
+           <div class="tab-pane fade" id="accessories" role="tabpanel" aria-labelledby="accessories-tab">
+    <div class="row">
+        <!-- Mouse Wireless -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/mouse.jpeg" alt="Mouse Wireless" class="product-img">
+                    <span class="product-badge">NEW</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Mouse Wireless</h3>
+                    <p class="product-desc">Mouse wireless dengan sensor 1600 DPI, konektivitas Bluetooth dan USB receiver.</p>
+                    <div class="product-price">Rp 450.000</div>
+                    <a href="../src/detail-aksesoris.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Headset Bluetooth HP -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/headset.jpeg" alt="Headset Bluetooth" class="product-img">
+                    <span class="product-badge">BEST</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Headset Bluetooth</h3>
+                    <p class="product-desc">Headset stereo dengan Bluetooth 5.2, mic HD, dan baterai tahan 30 jam.</p>
+                    <div class="product-price">Rp 750.000</div>
+                    <a href="../src/detail-aksesoris.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Keyboard Mini RGB -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/keyboard.jpeg" alt="Mini RGB Keyboard" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Keyboard Mini RGB</h3>
+                    <p class="product-desc">Keyboard 60% dengan RGB backlight, switch clicky, dan kabel detachable.</p>
+                    <div class="product-price">Rp 990.000 <span class="old-price">Rp 1.200.000</span></div>
+                    <a href="../src/detail-aksesoris.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Power Bank Slim HP -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/power.jpeg" alt="Power Bank Slim" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Power Bank Slim</h3>
+                    <p class="product-desc">Power bank 20.000mAh ultra tipis dengan QuickCharge dan Power Delivery.</p>
+                    <div class="product-price">Rp 399.000</div>
+                    <a href="../src/detail-aksesoris.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Remote Smart TV -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/remote.jpeg" alt="Remote TV" class="product-img">
+                    <span class="product-badge">HOT</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Remote Smart TV</h3>
+                    <p class="product-desc">Remote universal untuk Smart TV dengan koneksi IR dan Bluetooth, kompatibel banyak merek.</p>
+                    <div class="product-price">Rp 250.000</div>
+                    <a href="../src/detail-aksesoris.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kabel HDMI 4K -->
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="../images/hdmi.jpeg" alt="Kabel HDMI" class="product-img">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Kabel HDMI 4K</h3>
+                    <p class="product-desc">Kabel HDMI versi 2.1 sepanjang 2 meter, dukung resolusi 8K & 4K 120Hz untuk TV & monitor.</p>
+                    <div class="product-price">Rp 129.000 <span class="old-price">Rp 159.000</span></div>
+                    <a href="../src/detail-aksesoris.html" class="btn btn-detail">Detail Produk</a>
+                    <a href="../src/beli.html" class="btn btn-buy">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../js/script.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

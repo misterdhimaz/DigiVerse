@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digiverse - Future Technology Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .desc-short { max-height: 160px; overflow: hidden; }
+  </style>
+</head>
+<body>
+  <div id="navbar"></div><br><br>
+  <br></br>
+  <br></br>
+
+<div class="container py-5">
+  <div class="row g-5">
+    <!-- Gambar Produk -->
+    <div class="col-md-6">
+      <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/rtx4090-1.png" class="d-block w-100 rounded" style="height:400px; object-fit:cover;" alt="RTX 4090" />
+          </div>
+          <div class="carousel-item">
+            <img src="../images/rtx4090-2.png" class="d-block w-100 rounded" style="height:400px; object-fit:cover;" alt="RTX 4090" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Informasi Produk -->
+    <div class="col-md-6">
+      <h2 class="fw-bold service-title">NVIDIA GeForce RTX 4090</h2>
+      <p class="text-muted">85 pcs tersisa</p>
+      <h4 class="text-danger">Rp 33.999.000</h4>
+
+      <p class="service-desc">
+        NVIDIA GeForce RTX 4090 adalah kartu grafis generasi terbaru dengan arsitektur Ada Lovelace. Dirancang untuk gamer dan kreator profesional, RTX 4090 menawarkan performa ekstrem dengan dukungan DLSS 3 dan ray tracing generasi ke-3. GPU ini mampu menangani game AAA dan proses rendering 3D berat dengan mulus.
+      </p>
+
+      <form class="mb-3">
+        <label for="quantity" class="form-label">Jumlah:</label>
+        <input type="number" id="quantity" class="form-control w-25" value="1" min="1" />
+      </form>
+
+      <!-- Pilih Model -->
+      <div class="mb-3">
+        <label class="form-label">Pilih Model:</label>
+        <div class="btn-group" role="group" aria-label="Pilih Model">
+          <input type="radio" class="btn-check" name="model" id="model1" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="model1">RTX 4090 Founders Edition</label>
+
+          <input type="radio" class="btn-check" name="model" id="model2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="model2">RTX 4090 ASUS ROG Strix</label>
+
+          <input type="radio" class="btn-check" name="model" id="model3" autocomplete="off">
+          <label class="btn btn-outline-primary" for="model3">RTX 4090 MSI Suprim X</label>
+        </div>
+      </div>
+
+      <!-- Informasi Pengiriman -->
+      <div class="mb-3">
+        <p class="text-success"><i class="bi bi-truck"></i> Estimasi pengiriman: 1–3 hari kerja</p>
+      </div>
+
+      <a class="btn btn-dark me-2" href="keranjang.html">🛒 Tambah ke Keranjang</a>
+      <a class="btn btn-outline-secondary" href="beli.html">♡ Beli Sekarang</a>
+    </div>
+
+    <!-- Tab Deskripsi dan Ulasan -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <ul class="nav nav-tabs" id="productTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button" role="tab">
+              Deskripsi
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="spec-tab" data-bs-toggle="tab" data-bs-target="#spec" type="button" role="tab">
+              Spesifikasi
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">
+              Ulasan
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content p-3 border border-top-0" id="productTabContent">
+          <!-- Deskripsi -->
+          <div class="tab-pane fade show active" id="desc" role="tabpanel">
+            <div class="row mt-5"> 
+              <div class="col-12">
+                <div id="productDesc" class="desc-short">
+                  <ul>
+                    <li><strong>Model:</strong> RTX 4090</li>
+                    <li><strong>Warna:</strong> Hitam dan Silver</li>
+                    <li><strong>Garansi:</strong> Resmi NVIDIA Indonesia 3 Tahun</li>
+                    <li><strong>Arsitektur:</strong> Ada Lovelace</li>
+                    <li><strong>VRAM:</strong> 24GB GDDR6X</li>
+                    <li><strong>Boost Clock:</strong> Hingga 2.52 GHz</li>
+                    <li><strong>Cuda Cores:</strong> 16384</li>
+                    <li><strong>Output:</strong> HDMI 2.1, 3x DisplayPort 1.4a</li>
+                    <li><strong>Power:</strong> 450W TDP (rekomendasi PSU 850W)</li>
+                    <li><strong>Fitur Tambahan:</strong> DLSS 3, Ray Tracing Gen 3, AV1 Encoding</li>
+                    <li><strong>Dimensi:</strong> 304mm x 137mm x 61mm</li>
+                    <li><strong>Sistem Pendingin:</strong> Triple Fan atau Vapor Chamber (tergantung model)</li>
+                    <li><strong>Kompatibilitas:</strong> PCIe 4.0 x16</li>
+                  </ul>
+                </div>
+                <button id="toggleBtn" class="btn btn-link p-0 mt-2">Tampilkan lebih banyak ▼</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spesifikasi -->
+          <div class="tab-pane fade" id="spec" role="tabpanel" aria-labelledby="spec-tab">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-white"><strong>Cara Klaim:</strong> Hubungi Merek</li>
+              <li class="list-group-white"><strong>Fungsionalitas:</strong> Gaming dan Desain Profesional</li>
+              <li class="list-group-white"><strong>Kapasitas Memori:</strong> 24GB GDDR6X</li>
+              <li class="list-group-white"><strong>Periode Garansi:</strong> 36 Bulan</li>
+              <li class="list-group-white"><strong>Sistem Pendingin:</strong> Triple Fan / Vapor Chamber</li>
+              <li class="list-group-white"><strong>Ray Tracing:</strong> Ya</li>
+              <li class="list-group-white"><strong>Output:</strong> HDMI & DisplayPort</li>
+            </ul>
+          </div>
+
+          <!-- Ulasan -->
+          <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+            <div class="container my-4" id="commentContainer">
+              <!-- Ulasan 1 -->
+              <div class="mb-3 d-flex align-items-start">
+                <img src="../images/pp1.jpeg" class="rounded-circle me-3" style="width:50px; height:50px; object-fit:cover;" alt="Review 1">
+                <div>
+                  <strong> Aldi G. 🌟🌟🌟🌟🌟</strong><br />
+                  <small class="service-desc">10 Mei 2025</small>
+                  <p>Kualitas grafik dan performa gamingnya luar biasa. Main 4K ultra setting tetap mulus.</p>
+                </div>
+              </div>
+
+              <!-- Ulasan 2 -->
+              <div class="mb-3 d-flex align-items-start">
+                <img src="../images/pp2.jpeg" class="rounded-circle me-3" style="width:50px; height:50px;" alt="Review 2">
+                <div>
+                  <strong> Siti N. 🌟🌟🌟🌟</strong><br />
+                  <small class="service-desc">9 Mei 2025</small>
+                  <p>Harga memang tinggi tapi sebanding banget dengan performanya. Cocok buat kreator konten dan editor video.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<div id="footer"></div>
+<script src="../js/script.js"></script>
+
+<script>
+  const toggleBtn = document.getElementById("toggleBtn");
+  const desc = document.getElementById("productDesc");
+  toggleBtn.addEventListener("click", () => {
+    desc.classList.toggle("desc-short");
+    toggleBtn.innerText = desc.classList.contains("desc-short") ? "Tampilkan lebih banyak ▼" : "Tampilkan lebih sedikit ▲";
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

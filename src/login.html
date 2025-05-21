@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiverse - Future Technology Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="navbar"></div><br><br><br>
+  <br></br>
+  <br></br>
+<div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="card p-4 shadow rounded-4 service-card glow-border" style="width: 100%; max-width: 500px;">
+    <h3 class="text-center mb-3 service-title">Login</h3>
+    <div class="d-grid gap-2 mb-3">
+      <a href="#" class="btn btn-danger">
+        <i class="fab fa-google me-2"></i> Login with Google
+      </a>
+      <a href="#" class="btn btn-primary" style="background-color: #3b5998;">
+        <i class="fab fa-facebook-f me-2"></i> Login with Facebook
+      </a>
+    </div>
+
+    <div class="text-center my-2"  style="color: aliceblue;">OR</div>
+    <form  action="../index.html" method="GET">
+      <div class="mb-3">
+        <label for="email" class="form-label service-title">Username</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter Username">
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label service-title">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password">
+      </div>
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="remember">
+      <label class="form-check-label service-desc" for="remember">Remember me</label>
+      </div>
+        <a class="service-desc rounded-4 glow-border" href="password.html" style="color: aliceblue;">Forgot password?</a>
+      </div>
+      <button type="submit" class="btn btn-neon w-100" style="--neon-blue: var(--neon-green); border-color: var(--neon-green); box-shadow: 0 0 10px var(--neon-green);">Login</button>
+    </form>
+
+    <div class="text-center mt-3">
+      <small  style="color: aliceblue;">Don't have an account? <a href="./register.html" class="rounded-4 glow-border">Register</a></small>
+    </div>
+  </div>
+</div>
+
+<br><br>
+<div id="footer"></div>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

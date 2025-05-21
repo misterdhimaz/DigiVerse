@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Digiverse</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../css/style.css">
+  <style>
+  body {
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    background: radial-gradient(ellipse at bottom, #0c0c1d 0%, #000000 100%);
+    color: #e0e0ff;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.3s ease;
+  }
+
+  .cyber-header {
+    background: linear-gradient(to right, #0ff, #f0f, #f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 4rem;
+  }
+
+  .section-title {
+    color: #0ff;
+    text-shadow: 0 0 4px #0ff;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .section-title:hover {
+    text-shadow: 0 0 6px #0ff, 0 0 10px #0ff;
+  }
+
+  .glow-box {
+    background-color: rgba(20, 20, 40, 0.6);
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #0ff, #f0f, #f00, #0f0);
+    border-image-slice: 1;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .glow-box:hover {
+    box-shadow: 0 0 8px #0ff, 0 0 12px #f0f;
+    transform: translateY(-3px);
+  }
+
+  .neon-btn {
+    color: #fff;
+    background: linear-gradient(45deg, #f0f, #0ff, #0f0);
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 0 5px #0ff;
+    transition: 0.3s ease;
+  }
+
+  .neon-btn:hover {
+    box-shadow: 0 0 8px #0ff, 0 0 12px #f0f;
+    transform: scale(1.03);
+  }
+
+  .service-card {
+    background-color: #1a1a2e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 6px rgba(0, 255, 255, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .service-card:hover {
+    box-shadow: 0 0 10px #0ff, 0 0 14px #f0f;
+    transform: translateY(-5px);
+  }
+
+  .bg-glow {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    background: radial-gradient(circle at center, rgba(0,255,255,0.05), transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+    animation: pulse 6s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.3; }
+    50% { transform: scale(1.05); opacity: 0.5; }
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  footer {
+    padding: 2rem 0;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    background-color: #0a0a16;
+    border-top: 1px solid #333;
+    margin-top: 3rem;
+    transition: all 0.3s ease;
+  }
+
+  footer:hover {
+    color: #ccc;
+    text-shadow: 0 0 6px #0ff;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+
+  ul li:hover {
+    color: #0ff;
+    text-shadow: 0 0 4px #0ff;
+  }
+
+  p {
+    transition: all 0.3s ease;
+  }
+
+  p:hover {
+    color: #ccc;
+  }
+</style>
+
+</head>
+<body>
+  <div id="navbar"></div><br><br>
+<div class="bg-glow"></div>
+
+<!-- Header -->
+<header class="text-center text-white">
+  <h1 class="cyber-header">ABOUT US</h1>
+  <p class="text-light fs-5">Welcome to the future with <span class="text-info">Digiverse</span></p>
+</header>
+
+<!-- Journey Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title">Our Journey</h2>
+    <div class="glow-box">
+      <p>Digiverse lahir dari mimpi besar sekelompok inovator muda yang percaya bahwa teknologi adalah kunci peradaban masa depan. Bermula dari sebuah ruangan kecil dengan satu visi besar—membentuk masa depan melalui inovasi digital—kami membangun langkah demi langkah dengan semangat tanpa batas.</p>
+      <p>Di tahun-tahun awal, kami berfokus pada eksplorasi tren teknologi global dan kebutuhan lokal. Kami menyadari bahwa banyak individu dan bisnis masih menghadapi kesenjangan digital. Karena itulah, kami mulai merancang layanan yang tidak hanya mutakhir, tetapi juga inklusif dan mudah diakses.</p>
+      <p>Seiring waktu, Digiverse berkembang menjadi perusahaan teknologi berbasis masa depan yang menyediakan solusi terintegrasi, mulai dari penjualan perangkat teknologi mutakhir, layanan IT & teknisi profesional, hingga program pelatihan digital yang menyentuh ribuan individu dan bisnis.</p>
+      <p>Tidak berhenti di sana, kami juga aktif membangun komunitas digital yang mendukung pertumbuhan bersama, mengadakan bootcamp, hackathon, dan forum diskusi yang mempertemukan talenta dan ide-ide baru. Kami percaya bahwa kolaborasi adalah bahan bakar utama kemajuan.</p>
+      <p>Dari awal yang sederhana hingga menjadi salah satu pemain utama dalam transformasi digital di era modern, semangat kami tidak pernah berubah: membawa dunia ke masa depan, satu inovasi dalam satu waktu. Digiverse bukan sekadar perusahaan—kami adalah gerakan menuju masa depan yang lebih cerdas dan berdaya.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Vision & Mission -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title">Vision & Mission</h2>
+    <div class="glow-box">
+      <h4 class="text-info">Visi Kami</h4>
+      <p>Menjadi pusat inovasi teknologi digital terdepan yang membentuk masa depan, memberdayakan generasi, dan menciptakan ekosistem digital yang inklusif, cerdas, dan berkelanjutan.</p>
+      <h4 class="text-success mt-4">Misi Kami</h4>
+      <ul>
+        <li>💡 Mendorong Inovasi: Mengembangkan dan menyediakan produk teknologi terbaru yang relevan dengan kebutuhan masa depan.</li>
+        <li>🛠️ Memberikan Solusi: Menawarkan layanan IT dan teknisi yang handal, cepat tanggap, dan terpercaya untuk individu maupun perusahaan.</li>
+        <li>🎓 Membentuk Generasi Digital: Menyediakan program pelatihan dan kursus teknologi yang terjangkau, berkualitas, dan berorientasi pada kebutuhan industri 4.0.</li>
+        <li>🌍 Membangun Ekosistem: Menjadi jembatan antara manusia dan teknologi melalui kolaborasi, komunitas, dan keberlanjutan digital.</li>
+        <li>🔐 Menjaga Keamanan & Etika: Mengedepankan keamanan data, transparansi, dan tanggung jawab etis dalam setiap layanan kami.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Core Services -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title">Core Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5 class="text-danger">Penjualan Produk Teknologi</h5>
+          <p>Perangkat dan solusi digital mutakhir untuk kebutuhan masa depan.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5 class="text-warning">Layanan IT & Teknisi</h5>
+          <p>Dukungan teknis profesional dan terpercaya untuk individu maupun perusahaan.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5 class="text-primary">Kursus & Pelatihan Teknologi</h5>
+          <p>Program edukasi digital untuk semua kalangan, siap menghadapi industri 4.0.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Motivation -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title">Our Motivation</h2>
+    <div class="glow-box">
+      <p>Kami percaya bahwa teknologi bukan hanya alat, tapi jembatan menuju masa depan. Digiverse hadir untuk memastikan semua orang siap menyambut era digital dengan percaya diri dan kemampuan terbaik. Setiap inovasi yang kami kembangkan memiliki tujuan: memberdayakan manusia untuk menjadi lebih adaptif, cerdas, dan siap dalam menghadapi dunia yang terus berubah.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <div id="footer"></div>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+ body {
+            background: linear-gradient(135deg, #0a1020 0%, #101c36 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #e0e6ed;
+        }
+        .hero-section {
+            position: relative;
+            width: 100%;
+            min-height: 340px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 3.5rem 1rem 2.5rem 1rem;
+            margin-bottom: 2.5rem;
+            background: url('../images/bgservice.gif') center/cover no-repeat;
+            border-radius: 2.5rem;
+            box-shadow: 0 8px 40px 0 rgba(0,255,247,0.08), 0 4px 32px 0 rgba(0,0,0,0.18);
+            overflow: hidden;
+        }
+        .hero-section::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(10, 16, 32, 0.78);
+            z-index: 1;
+        }
+        .hero-glow {
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -55%);
+            background: radial-gradient(circle at 60% 40%, #00fff7 0%, #a259ff 60%, transparent 100%);
+            opacity: 0.18;
+            filter: blur(32px);
+            z-index: 2;
+            pointer-events: none;
+        }
+        .hero-logo {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            border-radius: 1.5rem;
+            background: rgba(0,255,247,0.07);
+            box-shadow: 0 0 24px 0 #00fff744;
+            margin-bottom: 1.2rem;
+            z-index: 3;
+            position: relative;
+        }
+        .hero-title {
+            background: linear-gradient(90deg, #00fff7 0%, #a259ff 60%, #fff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 2.4rem;
+            text-align: center;
+            margin-bottom: 0.7rem;
+            z-index: 3;
+            position: relative;
+        }
+        .hero-desc {
+            color: #7de0ff;
+            font-size: 1.18rem;
+            text-align: center;
+            max-width: 540px;
+            margin: 0 auto 0.5rem auto;
+            z-index: 3;
+            position: relative;
+        }
+        .service-card {
+            background: rgba(24, 32, 56, 0.98);
+            border: 1.5px solid #00fff7;
+            border-radius: 1.5rem;
+            padding: 2rem 1.5rem 1.5rem 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 32px 0 rgba(0,0,0,0.18);
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+            position: relative;
+            overflow: hidden;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .service-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 8px 40px 0 rgba(0,255,247,0.10), 0 4px 32px 0 rgba(0,0,0,0.18);
+            border-color: #a259ff;
+        }
+        .service-icon {
+            font-size: 2.7rem;
+            margin-bottom: 1rem;
+            color: #00fff7;
+            filter: drop-shadow(0 0 8px #00fff7aa);
+        }
+        .service-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            background: linear-gradient(90deg, #00fff7 0%, #a259ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+        .service-desc {
+            color: #e0e6ed;
+            font-size: 1.05rem;
+            opacity: 0.96;
+            min-height: 60px;
+        }
+        .btn-detail {
+            margin-top: 1.2rem;
+            background: linear-gradient(90deg, #a259ff 0%, #00fff7 100%);
+            color: #fff;
+            border: none;
+            border-radius: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            padding: 0.5rem 1.5rem;
+            transition: background 0.2s, color 0.2s;
+        }
+        .btn-detail:hover, .btn-detail:focus {
+            background: linear-gradient(90deg, #00fff7 0%, #a259ff 100%);
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 2rem 0.5rem 1.5rem 0.5rem;
+                border-radius: 1.2rem;
+            }
+            .hero-title {
+                font-size: 1.3rem;
+            }
+            .hero-logo {
+                width: 60px;
+                height: 60px;
+            }
+        }
