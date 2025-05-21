@@ -3,14 +3,23 @@ fetch('../components/navbar.html')
   .then(data => {
     document.getElementById('navbar').innerHTML = data;
 
+    console.log("haloo")
+
     // Mobile menu toggle
     const menuButton = document.getElementById("mobile-menu-button");
     const mobileMenu = document.getElementById("mobile-menu");
-    if (menuButton && mobileMenu) {
-      menuButton.addEventListener("click", function () {
-        mobileMenu.classList.toggle("hidden");
-      });
+    console.log(menuButton)
+    console.log(mobileMenu)
+
+if (menuButton && mobileMenu) {
+  menuButton.addEventListener("click", function () {
+    if (mobileMenu.style.display === "block") {
+      mobileMenu.style.display = "none";
+    } else {
+      mobileMenu.style.display = "block";
     }
+  });
+}
 
     // Navbar scroll effect
 const navbar = document.querySelector('.navbar');
