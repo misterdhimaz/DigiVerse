@@ -9,43 +9,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <style>
-#bank-options .bank-option {
+      #bank-options .bank-option {
   width: 100%;
-  height: 150px; 
+  height: 150px;
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #05061b;
+  background-color: #08060e;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   transition: box-shadow 0.3s ease;
-  gap: 0.5rem; 
+  cursor: pointer;
+  gap: 0.5rem;
 }
 
 #bank-options .bank-option:hover {
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
+.bank-logo {
+  max-width: 70%;
+  height: auto;
+  object-fit: contain;
+}
 
+.bank-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
 
-@media (min-width: 768px) {
-  .bank-option img {
-    max-width: 100px;
+@media (max-width: 768px) {
+  .bank-name {
+    font-size: 0.9rem;
+  }
+  .bank-option {
+    height: 130px;
+    padding: 0.75rem;
   }
 }
 
-    .bank-option.selected {
-      border-color: #0d6efd;
-      box-shadow: 0 0 10px rgba(13, 110, 253, 0.4);
-      background-color: #e7f1ff;
-    }
-    .bank-option img {
-      max-width: 100px;
-      height: auto;
-    }
 
   </style>
 </head>
@@ -94,31 +98,32 @@
     <div class="row g-3 text-center" id="bank-options">
       <div class="col-6 col-md-3 service-card">
         <div class="bank-option" data-fee="2000" data-bank="BCA">
-          <img src="../images/BCA.png" alt="BCA" class="img-fluid" />
-          <div class="mt-1">BCA</div>
+          <img src="../images/BCA.png" alt="BCA" class="bank-logo" />
+          <div class="bank-name">BCA</div>
         </div>
       </div>
       <div class="col-6 col-md-3 service-card">
         <div class="bank-option" data-fee="2000" data-bank="Mandiri">
-          <img src="../images/mandiri.png" alt="Mandiri" class="img-fluid" />
-          <div class="mb-11">Mandiri</div>
+          <img src="../images/mandiri.png" alt="Mandiri" class="bank-logo" />
+          <div class="bank-name">Mandiri</div>
         </div>
       </div>
       <div class="col-6 col-md-3 service-card">
         <div class="bank-option" data-fee="2000" data-bank="BNI">
-          <img src="../images/BNI.png" alt="BNI" class="img-fluid" />
-          <div class="mt-1">BNI</div>
+          <img src="../images/BNI.png" alt="BNI" class="bank-logo" />
+          <div class="bank-name">BNI</div>
         </div>
       </div>
       <div class="col-6 col-md-3 service-card">
         <div class="bank-option" data-fee="2000" data-bank="BSI">
-          <img src="../images/BSI.png" alt="BSI" class="img-fluid" />
-          <div class="mt-1">BSI</div>
+          <img src="../images/BSI.png" alt="BSI" class="bank-logo" />
+          <div class="bank-name">BSI</div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 
 
 
