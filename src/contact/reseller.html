@@ -1,75 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reseller</title>
-    <link rel="stylesheet" href="../../css/contact/reseller.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reseller</title>
+  <link rel="stylesheet" href="../../css/contact/reseller.css" />
+  <style>
+    /* Tombol back di sudut kiri atas */
+    .btn-back {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background-color: rgba(62, 19, 253, 0.85);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(62, 19, 253, 0.4);
+      user-select: none;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .btn-back:hover,
+    .btn-back:focus {
+      background-color: rgba(62, 19, 253, 1);
+      outline: none;
+      cursor: pointer;
+    }
+    .btn-back span {
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    /* Agar header hero-section posisinya relative, supaya tombol absolute ini patokannya di situ */
+    header.hero-section {
+      position: relative;
+    }
+  </style>
 </head>
 <body>
-    <header class="hero-section">
-  <div class="container">
-    <h1>Join Our Reseller Program</h1>
-    <p>Partner with DigiVerse and grow your business with us</p>
-  </div>
-</header>
+  <header class="hero-section">
+    <a href="../contactus.html" class="btn-back" aria-label="Back">
+      <span aria-hidden="true">&#8592;</span> Back
+    </a>
 
-<main class="content container">
-  <section>
-    <h2>Why Become a Reseller?</h2>
-    <ul>
-      <li>Access to exclusive DigiVerse products at discounted rates</li>
-      <li>Dedicated support and account management</li>
-      <li>Early access to new launches and promotional campaigns</li>
-      <li>Marketing materials and sales assistance</li>
-    </ul>
-  </section>
+    <div class="container">
+      <h1>Join Our Reseller Program</h1>
+      <p>Partner with DigiVerse and grow your business with us</p>
+    </div>
+  </header>
 
-  <section>
-    <h2>Reseller Requirements</h2>
-    <ul>
-      <li>Valid business registration or commercial entity</li>
-      <li>Ability to handle logistics and customer service</li>
-      <li>Commitment to DigiVerse brand values and policies</li>
-      <li>Minimum monthly purchase volume</li>
-    </ul>
-  </section>
+  <main class="content container">
+    <section>
+      <h2>Why Become a Reseller?</h2>
+      <ul>
+        <li>Access to exclusive DigiVerse products at discounted rates</li>
+        <li>Dedicated support and account management</li>
+        <li>Early access to new launches and promotional campaigns</li>
+        <li>Marketing materials and sales assistance</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>How to Apply</h2>
-    <ol>
-      <li>Fill out the <a href="#reseller-form">application form</a> below</li>
-      <li>Submit valid business credentials and supporting documents</li>
-      <li>Wait for approval within 3-5 business days</li>
-      <li>Start placing bulk orders and enjoy reseller benefits</li>
-    </ol>
-  </section>
+    <section>
+      <h2>Reseller Requirements</h2>
+      <ul>
+        <li>Valid business registration or commercial entity</li>
+        <li>Ability to handle logistics and customer service</li>
+        <li>Commitment to DigiVerse brand values and policies</li>
+        <li>Minimum monthly purchase volume</li>
+      </ul>
+    </section>
 
-  <section id="reseller-form">
-    <h2>Application Form</h2>
-    <form>
-      <label for="company-name">Company Name:</label><br>
-      <input type="text" id="company-name" name="company-name" required><br><br>
+    <section>
+      <h2>How to Apply</h2>
+      <ol>
+        <li>Fill out the <a href="#reseller-form">application form</a> below</li>
+        <li>Submit valid business credentials and supporting documents</li>
+        <li>Wait for approval within 3-5 business days</li>
+        <li>Start placing bulk orders and enjoy reseller benefits</li>
+      </ol>
+    </section>
 
-      <label for="contact-name">Your Name:</label><br>
-      <input type="text" id="contact-name" name="contact-name" required><br><br>
+    <section id="reseller-form">
+      <h2>Application Form</h2>
+      <form>
+        <label for="company-name">Company Name:</label><br />
+        <input type="text" id="company-name" name="company-name" required /><br /><br />
 
-      <label for="email">Email Address:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+        <label for="contact-name">Your Name:</label><br />
+        <input type="text" id="contact-name" name="contact-name" required /><br /><br />
 
-      <label for="phone">Phone Number:</label><br>
-      <input type="tel" id="phone" name="phone" required><br><br>
+        <label for="email">Email Address:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
 
-      <label for="business-doc">Business License (PDF):</label><br>
-      <input type="file" id="business-doc" name="business-doc" accept=".pdf" required><br><br>
+        <label for="phone">Phone Number:</label><br />
+        <input type="tel" id="phone" name="phone" required /><br /><br />
 
-      <button type="submit">Submit Application</button>
-    </form>
-  </section>
-</main>
+        <label for="business-doc">Business License (PDF):</label><br />
+        <input type="file" id="business-doc" name="business-doc" accept=".pdf" required /><br /><br />
 
-<script src="../js/reseller.js"></script>
+        <button type="submit">Submit Application</button>
+      </form>
+    </section>
+  </main>
 
-    
+  <script src="../js/reseller.js"></script>
 </body>
 </html>

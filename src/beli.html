@@ -9,14 +9,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <style>
-      .bank-option {
-      border: 2px solid #dee2e6;
-      padding: 10px;
-      border-radius: 10px;
-      text-align: center;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+#bank-options .bank-option {
+  width: 100%;
+  height: 150px; 
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #05061b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  gap: 0.5rem; 
+}
+
+#bank-options .bank-option:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+
+
+@media (min-width: 768px) {
+  .bank-option img {
+    max-width: 100px;
+  }
+}
+
     .bank-option.selected {
       border-color: #0d6efd;
       box-shadow: 0 0 10px rgba(13, 110, 253, 0.4);
@@ -31,10 +51,11 @@
 </head>
 <body>
   <div id="navbar"></div><br><br><br><br>
-<body class="p-4">
+<body class="p-2 p-md-4">
+<div class="container-fluid container-md px-3 px-md-5">
 
-<div class="container">
-  <h3 class="mb-4 service-title align-items-center">Form Checkout</h3>
+  <h3 class="mb-4 service-title align-items-center text-center text-md-start">Form Checkout</h3>
+
 
   <!-- Alamat -->
   <div class="card mb-3 service-card service-title">
@@ -67,37 +88,39 @@
   </div>
 
   <!-- Pembayaran -->
-  <div class="card mb-3 service-card service-title">
-    <div class="card-header fw-bold">Metode Pembayaran (Transfer Bank)</div>
-    <div class="card-body">
-      <div class="row g-3 text-center" id="bank-options">
-        <div class="col-6 col-md-3 service-card">
-          <div class="bank-option" data-fee="2000" data-bank="BCA">
-            <img src="../images/BCA.png" alt="BCA">
-            <div class="mt-1">BCA</div>
-          </div>
+<div class="card mb-3 service-card service-title">
+  <div class="card-header fw-bold">Metode Pembayaran (Transfer Bank)</div>
+  <div class="card-body">
+    <div class="row g-3 text-center" id="bank-options">
+      <div class="col-6 col-md-3 service-card">
+        <div class="bank-option" data-fee="2000" data-bank="BCA">
+          <img src="../images/BCA.png" alt="BCA" class="img-fluid" />
+          <div class="mt-1">BCA</div>
         </div>
-        <div class="col-6 col-md-3 service-card">
-          <div class="bank-option" data-fee="2000" data-bank="Mandiri">
-            <img src="../images/mandiri.png" alt="Mandiri">
-            <div class="mt-1">Mandiri</div>
-          </div>
+      </div>
+      <div class="col-6 col-md-3 service-card">
+        <div class="bank-option" data-fee="2000" data-bank="Mandiri">
+          <img src="../images/mandiri.png" alt="Mandiri" class="img-fluid" />
+          <div class="mb-11">Mandiri</div>
         </div>
-        <div class="col-6 col-md-3 service-card">
-          <div class="bank-option" data-fee="2000" data-bank="BNI">
-            <img src="../images/BNI.png" alt="BNI">
-            <div class="mt-1">BNI</div>
-          </div>
+      </div>
+      <div class="col-6 col-md-3 service-card">
+        <div class="bank-option" data-fee="2000" data-bank="BNI">
+          <img src="../images/BNI.png" alt="BNI" class="img-fluid" />
+          <div class="mt-1">BNI</div>
         </div>
-        <div class="col-6 col-md-3 service-card">
-          <div class="bank-option" data-fee="2000" data-bank="BSI">
-            <img src="../images/BSI.png" alt="BSI">
-            <div class="mt-1">BSI</div>
-          </div>
+      </div>
+      <div class="col-6 col-md-3 service-card">
+        <div class="bank-option" data-fee="2000" data-bank="BSI">
+          <img src="../images/BSI.png" alt="BSI" class="img-fluid" />
+          <div class="mt-1">BSI</div>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+
 
   <!-- Total -->
   <div class="card mt-4 service-card service-title">

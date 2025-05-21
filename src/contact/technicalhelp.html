@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical</title>
-    <link rel="stylesheet" href="../../css/contact/technicalhelp.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Technical</title>
+  <link rel="stylesheet" href="../../css/contact/technicalhelp.css" />
+  <style>
+    /* Tombol back di sudut kiri atas */
+    .btn-back {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background-color: rgba(62, 19, 253, 0.85);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(62, 19, 253, 0.4);
+      user-select: none;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .btn-back:hover,
+    .btn-back:focus {
+      background-color: rgba(62, 19, 253, 1);
+      outline: none;
+      cursor: pointer;
+    }
+    .btn-back span {
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    /* Agar posisi tombol relatif terhadap header */
+    header.hero-section {
+      position: relative;
+    }
+  </style>
 </head>
 <body>
-     <header class="hero-section">
+  <header class="hero-section">
+    <a href="../contactus.html" class="btn-back" aria-label="Back">
+      <span aria-hidden="true">&#8592;</span> Back
+    </a>
     <div class="container">
       <h1 class="technical-help">Technical Help</h1>
       <p>Your go-to resource for troubleshooting and support</p>
@@ -55,7 +95,5 @@
       </ul>
     </section>
   </main>
-
-  
 </body>
 </html>
